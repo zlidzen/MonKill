@@ -1,0 +1,43 @@
+object DialogForm: TDialogForm
+  Left = 602
+  Height = 338
+  Top = 220
+  Width = 458
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Помощь'
+  ClientHeight = 338
+  ClientWidth = 458
+  OnShow = FormShow
+  LCLVersion = '1.2.6.0'
+  object btnOk: TButton
+    Left = 184
+    Height = 25
+    Top = 304
+    Width = 75
+    Cancel = True
+    Caption = 'Акей'
+    ModalResult = 1
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 13
+    Top = 8
+    Width = 75
+    Caption = 'Правила игры:'
+    ParentColor = False
+  end
+  object Memo1: TMemo
+    Left = 8
+    Height = 272
+    Top = 24
+    Width = 440
+    Lines.Strings = (
+      'Memo1'
+    )
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 1
+  end
+end

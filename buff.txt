@@ -1,0 +1,20 @@
+//procedure TFormLoadMonstr.FormShow(Sender: TObject);
+var
+  s:string;
+  f:TextFile;
+begin
+  //
+    ComboBox1.Clear;
+    assignfile(f,'listmon.txt');
+    reset(f);
+
+    while not EOF(f) do
+          begin
+          readLn(f,s);
+          ComboBox1.Items.Add(s);
+          ShowMessage('Строка ' + s);
+           //Add(s);
+          end;
+    closefile(f);
+  //
+end;  

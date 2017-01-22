@@ -1,0 +1,441 @@
+object MainForm: TMainForm
+  Left = 394
+  Height = 297
+  Top = 282
+  Width = 672
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'MonstrKill v.2.953/b'
+  ClientHeight = 278
+  ClientWidth = 672
+  Menu = MainMenu
+  OnCreate = FormCreate
+  LCLVersion = '1.2.6.0'
+  object pBarResult: TProgressBar
+    Left = 632
+    Height = 152
+    Top = 16
+    Width = 16
+    Max = 50
+    Orientation = pbVertical
+    Position = 50
+    TabOrder = 0
+  end
+  object Bevel1: TBevel
+    Left = 408
+    Height = 176
+    Top = 8
+    Width = 256
+    Style = bsRaised
+  end
+  object Bevel2: TBevel
+    Left = 8
+    Height = 176
+    Top = 8
+    Width = 256
+    Style = bsRaised
+  end
+  object ProgressBar1: TProgressBar
+    Left = 232
+    Height = 152
+    Top = 16
+    Width = 16
+    Max = 50
+    Orientation = pbVertical
+    TabOrder = 1
+  end
+  object Label3: TLabel
+    Left = 24
+    Height = 13
+    Top = 16
+    Width = 56
+    Caption = 'Имя Хероя:'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 126
+    Height = 13
+    Top = 48
+    Width = 53
+    Caption = 'Здоровье:'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 126
+    Height = 13
+    Top = 80
+    Width = 29
+    Caption = 'Сила:'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 126
+    Height = 13
+    Top = 96
+    Width = 34
+    Caption = 'Броня:'
+    ParentColor = False
+  end
+  object lblNameHero: TLabel
+    Left = 126
+    Height = 13
+    Top = 16
+    Width = 23
+    Caption = 'Вася'
+    ParentColor = False
+  end
+  object lblHpHero: TLabel
+    Left = 192
+    Height = 13
+    Top = 48
+    Width = 18
+    Caption = '000'
+    ParentColor = False
+  end
+  object lblStrongHero: TLabel
+    Left = 192
+    Height = 13
+    Top = 80
+    Width = 18
+    Caption = '000'
+    ParentColor = False
+  end
+  object lblArmorHero: TLabel
+    Left = 192
+    Height = 13
+    Top = 96
+    Width = 18
+    Caption = '000'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 416
+    Height = 13
+    Top = 16
+    Width = 93
+    Caption = 'Название Монтра:'
+    ParentColor = False
+  end
+  object Label8: TLabel
+    Left = 526
+    Height = 13
+    Top = 64
+    Width = 53
+    Caption = 'Здоровье:'
+    ParentColor = False
+  end
+  object Label9: TLabel
+    Left = 526
+    Height = 13
+    Top = 96
+    Width = 29
+    Caption = 'Сила:'
+    ParentColor = False
+  end
+  object Label10: TLabel
+    Left = 526
+    Height = 13
+    Top = 112
+    Width = 34
+    Caption = 'Броня:'
+    ParentColor = False
+  end
+  object lblNameMonstr: TLabel
+    Left = 512
+    Height = 29
+    Top = 16
+    Width = 120
+    AutoSize = False
+    Caption = 'МОнстр1'
+    ParentColor = False
+    WordWrap = True
+  end
+  object lblHpMonstr: TLabel
+    Left = 592
+    Height = 13
+    Top = 64
+    Width = 18
+    Caption = '000'
+    ParentColor = False
+  end
+  object lblStrongMonstr: TLabel
+    Left = 592
+    Height = 13
+    Top = 96
+    Width = 18
+    Caption = '000'
+    ParentColor = False
+  end
+  object lblArmorMonstr: TLabel
+    Left = 592
+    Height = 13
+    Top = 112
+    Width = 18
+    Caption = '000'
+    ParentColor = False
+  end
+  object Label11: TLabel
+    Left = 126
+    Height = 13
+    Top = 32
+    Width = 47
+    Caption = 'Уровень:'
+    ParentColor = False
+  end
+  object lblLvlHero: TLabel
+    Left = 192
+    Height = 13
+    Top = 32
+    Width = 22
+    Caption = 'lvl_1'
+    ParentColor = False
+  end
+  object lblLv: TLabel
+    Left = 526
+    Height = 13
+    Top = 48
+    Width = 47
+    Caption = 'Уровень:'
+    ParentColor = False
+  end
+  object lblLvlMonstr: TLabel
+    Left = 592
+    Height = 13
+    Top = 48
+    Width = 22
+    Caption = 'lvl_1'
+    ParentColor = False
+  end
+  object lblAttackHero1: TLabel
+    Left = 126
+    Height = 13
+    Top = 112
+    Width = 35
+    Caption = 'Атака:'
+    ParentColor = False
+  end
+  object lblAttackHero: TLabel
+    Left = 192
+    Height = 13
+    Top = 112
+    Width = 18
+    Caption = '000'
+    ParentColor = False
+  end
+  object lblExp1: TLabel
+    Left = 126
+    Height = 13
+    Top = 160
+    Width = 32
+    Caption = 'Опыт:'
+    ParentColor = False
+  end
+  object lblExp: TLabel
+    Left = 168
+    Height = 13
+    Top = 160
+    Width = 18
+    Caption = '000'
+    ParentColor = False
+  end
+  object Label12: TLabel
+    Left = 526
+    Height = 13
+    Top = 128
+    Width = 35
+    Caption = 'Атака:'
+    ParentColor = False
+  end
+  object lblAttakMon: TLabel
+    Left = 592
+    Height = 13
+    Top = 128
+    Width = 18
+    Caption = '000'
+    ParentColor = False
+  end
+  object Label13: TLabel
+    Left = 126
+    Height = 13
+    Top = 128
+    Width = 43
+    Caption = 'Защита:'
+    ParentColor = False
+  end
+  object lblBlockHero: TLabel
+    Left = 192
+    Height = 13
+    Top = 128
+    Width = 18
+    Caption = '000'
+    ParentColor = False
+  end
+  object ImageHero: TImage
+    Left = 16
+    Height = 130
+    Top = 40
+    Width = 90
+  end
+  object ImageMon: TImage
+    Left = 416
+    Height = 130
+    Top = 41
+    Width = 90
+    Center = True
+    Stretch = True
+  end
+  object Bevel3: TBevel
+    Left = 275
+    Height = 176
+    Top = 8
+    Width = 120
+  end
+  object lblAction: TLabel
+    Left = 291
+    Height = 13
+    Top = 19
+    Width = 74
+    Caption = 'Атака/Защита'
+    ParentColor = False
+  end
+  object chbHead: TCheckBox
+    Left = 291
+    Height = 17
+    Top = 41
+    Width = 71
+    BidiMode = bdRightToLeft
+    Caption = 'Голова     '
+    OnChange = chbHeadChange
+    ParentBidiMode = False
+    TabOrder = 2
+  end
+  object chbArms: TCheckBox
+    Left = 291
+    Height = 17
+    Top = 64
+    Width = 71
+    BidiMode = bdRightToLeft
+    Caption = 'Руки         '
+    OnChange = chbArmsChange
+    ParentBidiMode = False
+    TabOrder = 3
+  end
+  object chbBody: TCheckBox
+    Left = 291
+    Height = 17
+    Top = 88
+    Width = 71
+    BidiMode = bdRightToLeft
+    Caption = 'Туловище'
+    OnChange = chbBodyChange
+    ParentBidiMode = False
+    TabOrder = 4
+  end
+  object chbFut: TCheckBox
+    Left = 291
+    Height = 17
+    Top = 112
+    Width = 71
+    BidiMode = bdRightToLeft
+    Caption = 'Ноги         '
+    OnChange = chbFutChange
+    ParentBidiMode = False
+    TabOrder = 5
+  end
+  object btnAction: TButton
+    Left = 296
+    Height = 25
+    Top = 143
+    Width = 75
+    Caption = 'Атака/Защ'
+    Enabled = False
+    OnClick = btnActionClick
+    TabOrder = 6
+  end
+  object memOutAction: TMemo
+    Left = 8
+    Height = 80
+    Top = 192
+    Width = 656
+    Alignment = taCenter
+    Lines.Strings = (
+      ''
+    )
+    ParentBidiMode = False
+    ScrollBars = ssAutoBoth
+    TabOrder = 7
+  end
+  object Label1: TLabel
+    Left = 526
+    Height = 13
+    Top = 144
+    Width = 43
+    Caption = 'Защита:'
+    ParentColor = False
+  end
+  object lblBlockMonstr: TLabel
+    Left = 592
+    Height = 13
+    Top = 144
+    Width = 18
+    Caption = '000'
+    ParentColor = False
+  end
+  object MainMenu: TMainMenu
+    left = 584
+    top = 208
+    object MenuItemFile: TMenuItem
+      Caption = 'Файл'
+      object MenuItemFile1: TMenuItem
+        Caption = 'В бой'
+        OnClick = MenuItemFile1Click
+      end
+      object MenuItemFile5: TMenuItem
+        Caption = 'Выход'
+        OnClick = MenuItemFile5Click
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Герои'
+      object MenuItem3: TMenuItem
+        Caption = 'Создать'
+        OnClick = MenuItem3Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Загрузить'
+        OnClick = MenuItem4Click
+      end
+      object MenuItem9: TMenuItem
+        Caption = 'Сохранить'
+        Enabled = False
+        OnClick = MenuItem9Click
+      end
+      object MenuItem5: TMenuItem
+        Caption = 'Удалить'
+      end
+    end
+    object MenuItem1: TMenuItem
+      Caption = 'Бестиарий'
+      object MenuItem6: TMenuItem
+        Caption = 'Создать монстра'
+        Enabled = False
+      end
+      object MenuItem7: TMenuItem
+        Caption = 'Загрузить Монстра'
+        OnClick = MenuItem7Click
+      end
+      object MenuItem8: TMenuItem
+        Caption = 'Редактор'
+        Enabled = False
+      end
+    end
+    object MenuItemHelp: TMenuItem
+      Caption = 'Помощь'
+      OnClick = MenuItemHelpClick
+    end
+    object MenuItemAbout: TMenuItem
+      Caption = 'О программе'
+      OnClick = MenuItemAboutClick
+    end
+  end
+end

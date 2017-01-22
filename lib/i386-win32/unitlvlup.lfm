@@ -1,0 +1,433 @@
+object FormLvlUp: TFormLvlUp
+  Left = 151
+  Height = 247
+  Top = 207
+  Width = 338
+  BorderIcons = [biHelp]
+  BorderStyle = bsDialog
+  Caption = 'Новый уровень'
+  ClientHeight = 247
+  ClientWidth = 338
+  OnShow = FormShow
+  LCLVersion = '1.2.6.0'
+  object Label3: TLabel
+    Left = 8
+    Height = 13
+    Top = 8
+    Width = 56
+    Caption = 'Имя Хероя:'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 110
+    Height = 13
+    Top = 48
+    Width = 53
+    Caption = 'Здоровье:'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 110
+    Height = 13
+    Top = 72
+    Width = 29
+    Caption = 'Сила:'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 110
+    Height = 13
+    Top = 96
+    Width = 34
+    Caption = 'Броня:'
+    ParentColor = False
+  end
+  object lblNameHero: TLabel
+    Left = 110
+    Height = 13
+    Top = 8
+    Width = 23
+    Caption = 'Вася'
+    ParentColor = False
+  end
+  object lblHpHero: TLabel
+    Left = 209
+    Height = 13
+    Top = 48
+    Width = 18
+    Caption = '000'
+    ParentColor = False
+  end
+  object lblStrongHero: TLabel
+    Left = 209
+    Height = 13
+    Top = 72
+    Width = 18
+    Caption = '000'
+    ParentColor = False
+  end
+  object lblArmorHero: TLabel
+    Left = 209
+    Height = 13
+    Top = 96
+    Width = 18
+    Caption = '000'
+    ParentColor = False
+  end
+  object Label11: TLabel
+    Left = 110
+    Height = 13
+    Top = 24
+    Width = 95
+    Caption = 'Текущий Уровень:'
+    ParentColor = False
+  end
+  object lblLvlHero: TLabel
+    Left = 209
+    Height = 13
+    Top = 24
+    Width = 22
+    Caption = 'lvl_1'
+    ParentColor = False
+  end
+  object lblAttackHero1: TLabel
+    Left = 110
+    Height = 13
+    Top = 120
+    Width = 73
+    Caption = 'Бросок Атаки:'
+    ParentColor = False
+  end
+  object lblBAttackHero: TLabel
+    Left = 209
+    Height = 13
+    Top = 120
+    Width = 18
+    Caption = '000'
+    ParentColor = False
+  end
+  object lblExp1: TLabel
+    Left = 8
+    Height = 13
+    Top = 170
+    Width = 32
+    Caption = 'Опыт:'
+    ParentColor = False
+  end
+  object lblExp: TLabel
+    Left = 48
+    Height = 13
+    Top = 170
+    Width = 47
+    Caption = '000 (000)'
+    ParentColor = False
+  end
+  object Label13: TLabel
+    Left = 110
+    Height = 13
+    Top = 168
+    Width = 83
+    Caption = 'Бросок Защиты:'
+    ParentColor = False
+  end
+  object lbBlBlockHero: TLabel
+    Left = 209
+    Height = 13
+    Top = 168
+    Width = 18
+    Caption = '000'
+    ParentColor = False
+  end
+  object ImageHero: TImage
+    Left = 8
+    Height = 130
+    Top = 32
+    Width = 90
+  end
+  object Label2: TLabel
+    Left = 240
+    Height = 20
+    Top = 41
+    Width = 12
+    Caption = '+'
+    Font.Height = 20
+    ParentColor = False
+    ParentFont = False
+  end
+  object EditUpHp: TEdit
+    Left = 256
+    Height = 21
+    Top = 40
+    Width = 48
+    ReadOnly = True
+    TabOrder = 0
+    Text = '0'
+  end
+  object EditUpPow: TEdit
+    Left = 256
+    Height = 21
+    Top = 64
+    Width = 48
+    ReadOnly = True
+    TabOrder = 1
+    Text = '0'
+  end
+  object EditUpArm: TEdit
+    Left = 256
+    Height = 21
+    Top = 88
+    Width = 48
+    ReadOnly = True
+    TabOrder = 2
+    Text = '0'
+  end
+  object UpDown1: TUpDown
+    Left = 304
+    Height = 23
+    Top = 40
+    Width = 25
+    Min = 0
+    Position = 0
+    TabOrder = 3
+    Wrap = False
+    OnClick = UpDown1Click
+  end
+  object EditUpBAtk: TEdit
+    Left = 256
+    Height = 21
+    Top = 112
+    Width = 48
+    ReadOnly = True
+    TabOrder = 4
+    Text = '0'
+  end
+  object EditUpBBlk: TEdit
+    Left = 256
+    Height = 21
+    Top = 160
+    Width = 48
+    ReadOnly = True
+    TabOrder = 5
+    Text = '0'
+  end
+  object UpDown3: TUpDown
+    Left = 304
+    Height = 23
+    Top = 64
+    Width = 25
+    Min = 0
+    Position = 0
+    TabOrder = 6
+    Wrap = False
+    OnClick = UpDown3Click
+  end
+  object UpDown2: TUpDown
+    Left = 304
+    Height = 23
+    Top = 88
+    Width = 25
+    Min = 0
+    Position = 0
+    TabOrder = 7
+    Wrap = False
+    OnClick = UpDown2Click
+  end
+  object UpDown4: TUpDown
+    Left = 304
+    Height = 23
+    Top = 112
+    Width = 25
+    Min = 0
+    Position = 0
+    TabOrder = 8
+    Wrap = False
+    OnClick = UpDown4Click
+  end
+  object UpDown5: TUpDown
+    Left = 304
+    Height = 23
+    Top = 160
+    Width = 25
+    Min = 0
+    Position = 0
+    TabOrder = 9
+    Wrap = False
+    OnClick = UpDown5Click
+  end
+  object Label12: TLabel
+    Left = 8
+    Height = 13
+    Top = 224
+    Width = 89
+    Caption = 'Свободные очки:'
+    ParentColor = False
+  end
+  object lblFreeBalls: TLabel
+    Left = 104
+    Height = 13
+    Top = 224
+    Width = 6
+    Caption = '2'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 256
+    Height = 25
+    Top = 216
+    Width = 75
+    Caption = 'Применить!'
+    ModalResult = 1
+    OnClick = Button1Click
+    TabOrder = 10
+  end
+  object Button2: TButton
+    Left = 154
+    Height = 25
+    Top = 216
+    Width = 73
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 11
+  end
+  object Label14: TLabel
+    Left = 110
+    Height = 13
+    Top = 144
+    Width = 68
+    Caption = 'Грань Атаки:'
+    ParentColor = False
+  end
+  object Label15: TLabel
+    Left = 110
+    Height = 13
+    Top = 192
+    Width = 78
+    Caption = 'Грань Защиты:'
+    ParentColor = False
+  end
+  object lblXAttackHero: TLabel
+    Left = 209
+    Height = 13
+    Top = 144
+    Width = 18
+    Caption = '000'
+    ParentColor = False
+  end
+  object lblXBlockHero: TLabel
+    Left = 209
+    Height = 13
+    Top = 192
+    Width = 18
+    Caption = '000'
+    ParentColor = False
+  end
+  object EditUpXAtk: TEdit
+    Left = 256
+    Height = 21
+    Top = 136
+    Width = 48
+    ReadOnly = True
+    TabOrder = 12
+    Text = '0'
+  end
+  object UpDown6: TUpDown
+    Left = 304
+    Height = 23
+    Top = 136
+    Width = 25
+    Min = 0
+    Position = 0
+    TabOrder = 13
+    Wrap = False
+    OnClick = UpDown6Click
+  end
+  object EditUpXBlk: TEdit
+    Left = 256
+    Height = 21
+    Top = 184
+    Width = 48
+    ReadOnly = True
+    TabOrder = 14
+    Text = '0'
+  end
+  object UpDown7: TUpDown
+    Left = 304
+    Height = 23
+    Top = 184
+    Width = 25
+    Min = 0
+    Position = 0
+    TabOrder = 15
+    Wrap = False
+    OnClick = UpDown7Click
+  end
+  object Label7: TLabel
+    Left = 240
+    Height = 20
+    Top = 65
+    Width = 12
+    Caption = '+'
+    Font.Height = 20
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label8: TLabel
+    Left = 240
+    Height = 20
+    Top = 89
+    Width = 12
+    Caption = '+'
+    Font.Height = 20
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label10: TLabel
+    Left = 240
+    Height = 20
+    Top = 113
+    Width = 12
+    Caption = '+'
+    Font.Height = 20
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label16: TLabel
+    Left = 240
+    Height = 20
+    Top = 137
+    Width = 12
+    Caption = '+'
+    Font.Height = 20
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label17: TLabel
+    Left = 240
+    Height = 20
+    Top = 161
+    Width = 12
+    Caption = '+'
+    Font.Height = 20
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label18: TLabel
+    Left = 240
+    Height = 20
+    Top = 185
+    Width = 12
+    Caption = '+'
+    Font.Height = 20
+    ParentColor = False
+    ParentFont = False
+  end
+  object btnSkip: TButton
+    Left = 256
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Сбросить'
+    OnClick = btnSkipClick
+    TabOrder = 16
+  end
+end

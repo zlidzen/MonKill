@@ -1,0 +1,196 @@
+object NewHero: TNewHero
+  Left = 390
+  Height = 295
+  Top = 63
+  Width = 287
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Создать нового героя'
+  ClientHeight = 295
+  ClientWidth = 287
+  LCLVersion = '1.2.6.0'
+  object Image1: TImage
+    Left = 184
+    Height = 130
+    Top = 8
+    Width = 90
+  end
+  object Button1: TButton
+    Left = 192
+    Height = 25
+    Top = 152
+    Width = 75
+    Caption = 'Картинка'
+    TabOrder = 0
+  end
+  object edtNameHero: TEdit
+    Left = 8
+    Height = 21
+    Top = 32
+    Width = 160
+    TabOrder = 1
+    Text = 'edtNameHero'
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 13
+    Top = 8
+    Width = 96
+    Caption = 'Имя вашего Героя:'
+    ParentColor = False
+  end
+  object btnCreateHero: TButton
+    Left = 192
+    Height = 25
+    Top = 188
+    Width = 75
+    Caption = 'Создать'
+    OnClick = btnCreateHeroClick
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 192
+    Height = 25
+    Top = 224
+    Width = 75
+    Caption = 'Отмена'
+    ModalResult = 2
+    TabOrder = 3
+  end
+  object cmbbClass: TComboBox
+    Left = 8
+    Height = 21
+    Top = 88
+    Width = 160
+    ItemHeight = 13
+    ItemIndex = 0
+    Items.Strings = (
+      'DD'
+      'T'
+    )
+    OnChange = cmbbClassChange
+    TabOrder = 4
+    Text = 'DD'
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 13
+    Top = 64
+    Width = 94
+    Caption = 'Тип вашего героя:'
+    ParentColor = False
+  end
+  object edtPass: TEdit
+    Left = 187
+    Height = 21
+    Hint = 'Пароль должен содержать 4 знака!!!'
+    Top = 264
+    Width = 80
+    TabOrder = 5
+    Text = '####'
+  end
+  object Label3: TLabel
+    Left = 33
+    Height = 13
+    Top = 272
+    Width = 135
+    Caption = 'Защитить паролем ####:'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 8
+    Height = 13
+    Top = 125
+    Width = 56
+    Caption = 'Уровень: 1'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 8
+    Height = 13
+    Top = 152
+    Width = 53
+    Caption = 'Здоровье:'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 96
+    Height = 13
+    Top = 125
+    Width = 53
+    Caption = 'Опыт: 000'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 8
+    Height = 13
+    Top = 176
+    Width = 29
+    Caption = 'Сила:'
+    ParentColor = False
+  end
+  object Label8: TLabel
+    Left = 8
+    Height = 13
+    Top = 200
+    Width = 34
+    Caption = 'Броня:'
+    ParentColor = False
+  end
+  object Label9: TLabel
+    Left = 8
+    Height = 13
+    Top = 224
+    Width = 35
+    Caption = 'Атака:'
+    ParentColor = False
+  end
+  object Label10: TLabel
+    Left = 8
+    Height = 13
+    Top = 244
+    Width = 43
+    Caption = 'Защита:'
+    ParentColor = False
+  end
+  object lblHelhH: TLabel
+    Left = 96
+    Height = 13
+    Top = 152
+    Width = 12
+    Caption = '25'
+    ParentColor = False
+  end
+  object lblPowerH: TLabel
+    Left = 96
+    Height = 13
+    Top = 176
+    Width = 6
+    Caption = '3'
+    ParentColor = False
+  end
+  object lblArmorH: TLabel
+    Left = 96
+    Height = 13
+    Top = 200
+    Width = 6
+    Caption = '2'
+    ParentColor = False
+  end
+  object lblAttackH: TLabel
+    Left = 96
+    Height = 13
+    Top = 224
+    Width = 18
+    Caption = '6d1'
+    ParentColor = False
+  end
+  object lblBlkH: TLabel
+    Left = 96
+    Height = 13
+    Top = 244
+    Width = 18
+    Caption = '5d1'
+    ParentColor = False
+  end
+end

@@ -1,0 +1,47 @@
+object FormLoadMonstr: TFormLoadMonstr
+  Left = 417
+  Height = 94
+  Top = 167
+  Width = 236
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Загрузить монстра'
+  ClientHeight = 94
+  ClientWidth = 236
+  OnShow = FormShow
+  LCLVersion = '1.2.6.0'
+  object Ok: TButton
+    Left = 16
+    Height = 25
+    Top = 56
+    Width = 99
+    Caption = 'Ok'
+    ModalResult = 1
+    TabOrder = 0
+  end
+  object Cancel: TButton
+    Left = 128
+    Height = 25
+    Top = 56
+    Width = 96
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 13
+    Top = 8
+    Width = 92
+    Caption = 'Выбрать монстра:'
+    ParentColor = False
+  end
+  object ComboBox1: TComboBox
+    Left = 16
+    Height = 21
+    Top = 24
+    Width = 208
+    ItemHeight = 13
+    TabOrder = 2
+  end
+end

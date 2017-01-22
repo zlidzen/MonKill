@@ -1,0 +1,63 @@
+object fLoadHero: TfLoadHero
+  Left = 416
+  Height = 131
+  Top = 512
+  Width = 194
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Загрузить Героя'
+  ClientHeight = 131
+  ClientWidth = 194
+  LCLVersion = '1.2.6.0'
+  object edtName: TEdit
+    Left = 16
+    Height = 21
+    Top = 24
+    Width = 160
+    TabOrder = 0
+    Text = 'edtName'
+  end
+  object edtPass: TEdit
+    Left = 96
+    Height = 21
+    Top = 56
+    Width = 80
+    TabOrder = 1
+    Text = 'edtPass'
+  end
+  object Button1: TButton
+    Left = 16
+    Height = 25
+    Top = 96
+    Width = 75
+    Caption = 'Отмена'
+    ModalResult = 2
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 101
+    Height = 25
+    Top = 96
+    Width = 75
+    Caption = 'Загрузить'
+    ModalResult = 1
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 13
+    Top = 8
+    Width = 56
+    Caption = 'Имя Героя:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 13
+    Top = 64
+    Width = 41
+    Caption = 'Пароль:'
+    ParentColor = False
+  end
+end
